@@ -1,253 +1,156 @@
 doctype html
-html(lang='en')
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name="description" content="Othmen Mhiri - IT student portfolio")
+    meta(name="author" content="Othmen Mhiri")
+    title Othmen Mhiri - IT Portfolio
+    link(rel="icon" type="image/x-icon" href="assets/img/favicon.ico")
+    script(src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet")
+    link(href="css/styles.css" rel="stylesheet")
 
-    head
+  body#page-top
+    // Navigation
+    nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+      a.navbar-brand.js-scroll-trigger(href="#page-top")
+        span.d-block.d-lg-none Othmen Mhiri
+        span.d-none.d-lg-block
+          img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src="assets/img/profile.jpg" alt="Othmen Mhiri Profile Picture")
+      button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href="#about") About
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href="#experience") Experience
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href="#education") Education
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href="#skills") Skills
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href="#certifications") Certifications & Projects
 
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+    // Page Content
+    .container-fluid.p-0
+      // About Section
+      section.resume-section#about
+        .resume-section-content
+          h1.mb-0 
+            | Othmen 
+            span.text-primary Mhiri
+          .subheading.mb-5
+            | Hammam Sousse, Tunisia · +216 56723120 · 
+            a(href="mailto:othmhiri@gmail.com") othmhiri@gmail.com
+            |  · 
+            a(href="https://www.linkedin.com/in/othmen-mhiri-255a95322/" target="_blank") LinkedIn
+          p.lead.mb-5
+            | I’m a passionate IT student at ISET Sousse specializing in Networks and IT Services.
+            br
+            | Currently focusing on Cloud Computing, DevOps, and Cybersecurity, while building hands-on projects and preparing for certifications.
+            br
+            | I believe in “suffer now, live happy later”—and I’m putting in the work now to grow and build my career internationally.
+          .social-icons
+            a.social-icon(href="https://github.com/othmen27" target="_blank")
+              i.fab.fa-github
+            a.social-icon(href="https://www.linkedin.com/in/othmen-mhiri-255a95322/" target="_blank")
+              i.fab.fa-linkedin-in
 
-        title Resume - Start Bootstrap Theme
+      hr.m-0
 
-        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+      // Experience Section
+      section.resume-section#experience
+        .resume-section-content
+          h2.mb-5 Experience
+          .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+            .flex-grow-1
+              h3.mb-0 Web Development Intern
+              .subheading.mb-3 Private Company
+              p
+                | I worked on building RESTful APIs using Node.js, Express.js, and PostgreSQL.
+                br
+                | I collaborated with Git and GitHub for version control, and handled frontend development using HTML, CSS, and JavaScript.
+            .flex-shrink-0
+              span.text-primary Summer 2024
 
-        // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+      hr.m-0
 
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
+      // Education Section
+      section.resume-section#education
+        .resume-section-content
+          h2.mb-5 Education
+          .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+            .flex-grow-1
+              h3.mb-0 ISET Sousse
+              .subheading.mb-3 Networks & IT Services (RSI)
+              p Currently entering 2nd year
+            .flex-shrink-0
+              span.text-primary 2024 - Present
+          .d-flex.flex-column.flex-md-row.justify-content-between
+            .flex-grow-1
+              h3.mb-0 Lycée Hammam Sousse
+              .subheading.mb-3 Baccalaureate in Computer Science
+              p Graduated in 2024
+            .flex-shrink-0
+              span.text-primary 2021 - 2024
 
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+      hr.m-0
 
-    body#page-top
+      // Skills Section
+      section.resume-section#skills
+        .resume-section-content
+          h2.mb-5 Skills
+          ul.fa-ul.mb-0
+            li
+              span.fa-li
+                i.fas.fa-check
+              | Node.js, Express.js, REST APIs
+            li
+              span.fa-li
+                i.fas.fa-check
+              | PostgreSQL, MySQL
+            li
+              span.fa-li
+                i.fas.fa-check
+              | Git & GitHub, Version Control
+            li
+              span.fa-li
+                i.fas.fa-check
+              | JavaScript, HTML, CSS, PHP
+            li
+              span.fa-li
+                i.fas.fa-check
+              | C, C++, Python, Lua
+            li
+              span.fa-li
+                i.fas.fa-check
+              | Object-Oriented Programming (OOP)
+            li
+              span.fa-li
+                i.fas.fa-check
+              | Networking Fundamentals & Cybersecurity Basics
 
-        // Navigation
-        nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
-            a.navbar-brand.js-scroll-trigger(href='#page-top')
-                span.d-block.d-lg-none Clarence Taylor
-                span.d-none.d-lg-block
-                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='...')
-            button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                span.navbar-toggler-icon
-            #navbarResponsive.collapse.navbar-collapse
-                ul.navbar-nav
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#about') About
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#experience') Experience
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#education') Education
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#skills') Skills
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#interests') Interests
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#awards') Awards
+      hr.m-0
 
-        // Page Content
-        .container-fluid.p-0
+      // Certifications & Projects Section
+      section.resume-section#certifications
+        .resume-section-content
+          h2.mb-5 Certifications & Projects
+          h4 Certifications I'm Working On:
+          ul
+            li CompTIA Network+ (WIP)
+            li CompTIA Security+ (WIP)
+            li AWS Certified Cloud Practitioner (WIP)
 
-            // About
-            section#about.resume-section
-                .resume-section-content
-                    h1.mb-0
-                        | Clarence 
-                        span.text-primary Taylor
-                    .subheading.mb-5
-                        | 3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 · 
-                        a(href='mailto:name@email.com') name@email.com
-                    p.lead.mb-5
-                        | I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
-                    .social-icons
-                        a.social-icon(href='#!')
-                            i.fab.fa-linkedin-in
-                        a.social-icon(href='#!')
-                            i.fab.fa-github
-                        a.social-icon(href='#!')
-                            i.fab.fa-twitter
-                        a.social-icon(href='#!')
-                            i.fab.fa-facebook-f
+          h4.mt-4 Projects (Work In Progress):
+          ul
+            li Cloud-Deployed Web App with IAM Policies (AWS)
+            li Personal Portfolio & Blog (This Website)
+            li Cybersecurity Lab Simulations (Home Setup)
 
-            hr.m-0
-
-            // Experience
-            section#experience.resume-section
-               .resume-section-content
-                    h2.mb-5 Experience
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 Senior Web Developer
-                            .subheading.mb-3 Intelitec Solutions
-                            p
-                                | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-                        .flex-shrink-0
-                            span.text-primary March 2013 - Present
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 Web Developer
-                            .subheading.mb-3 Intelitec Solutions
-                            p
-                                | Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-                        .flex-shrink-0
-                            span.text-primary December 2011 - March 2013
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 Junior Web Designer
-                            .subheading.mb-3 Shout! Media Productions
-                            p
-                                | Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
-                        .flex-shrink-0
-                            span.text-primary July 2010 - December 2011
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between
-                        .flex-grow-1
-                            h3.mb-0 Web Design Intern
-                            .subheading.mb-3 Shout! Media Productions
-                            p
-                                | Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
-                        .flex-shrink-0
-                            span.text-primary September 2008 - June 2010
-
-            hr.m-0
-
-            // Education
-            section#education.resume-section
-                .resume-section-content
-                    h2.mb-5 Education
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 University of Colorado Boulder
-                            .subheading.mb-3 Bachelor of Science
-                            div Computer Science - Web Development Track
-                            p GPA: 3.23
-                        .flex-shrink-0
-                            span.text-primary August 2006 - May 2010
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between
-                        .flex-grow-1
-                            h3.mb-0 James Buchanan High School
-                            .subheading.mb-3 Technology Magnet Program
-                            p GPA: 3.56
-                        .flex-shrink-0
-                            span.text-primary August 2002 - May 2006
-
-            hr.m-0
-
-            // Skills
-            section#skills.resume-section
-                .resume-section-content
-                    h2.mb-5 Skills
-                    .subheading.mb-3 Programming Languages & Tools
-                    ul.list-inline.dev-icons
-                        li.list-inline-item
-                            i.fab.fa-html5
-                        li.list-inline-item
-                            i.fab.fa-css3-alt
-                        li.list-inline-item
-                            i.fab.fa-js-square
-                        li.list-inline-item
-                            i.fab.fa-angular
-                        li.list-inline-item
-                            i.fab.fa-react
-                        li.list-inline-item
-                            i.fab.fa-node-js
-                        li.list-inline-item
-                            i.fab.fa-sass
-                        li.list-inline-item
-                            i.fab.fa-less
-                        li.list-inline-item
-                            i.fab.fa-wordpress
-                        li.list-inline-item
-                            i.fab.fa-gulp
-                        li.list-inline-item
-                            i.fab.fa-grunt
-                        li.list-inline-item
-                            i.fab.fa-npm
-                    .subheading.mb-3 Workflow
-                    ul.fa-ul.mb-0
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Mobile-First, Responsive Design
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Cross Browser Testing & Debugging
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Cross Functional Teams
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Agile Development & Scrum
-
-            hr.m-0
-
-            // Interests
-            section#interests.resume-section
-                .resume-section-content
-                    h2.mb-5 Interests
-                    p
-                        | Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.
-                    p.mb-0
-                        | When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.
-
-            hr.m-0
-
-            // Awards
-            section#awards.resume-section
-                .resume-section-content
-                    h2.mb-5 Awards & Certifications
-                    ul.fa-ul.mb-0
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | Google Analytics Certified Developer
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | Mobile Web Specialist - Google Certification
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 2
-                            sup nd 
-                            | Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - James Buchanan High School - Hackathon 2006
-                        li
-                            span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 3
-                            sup rd 
-                            | Place - James Buchanan High School - Hackathon 2005
-
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
-
-        // Core theme JS
-        script(src='js/scripts.js')
+    // Bootstrap core JS
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js")
+    script(src="js/scripts.js")
