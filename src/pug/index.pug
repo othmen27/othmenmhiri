@@ -46,7 +46,7 @@ html(lang="en")
             | Hammam Sousse, Tunisia · +216 56723120 · 
             a(href="mailto:othmhiri@gmail.com") othmhiri@gmail.com
             |  · 
-            a(href="https://www.linkedin.com/in/othmen-mhiri-255a95322/" target="_blank") LinkedIn
+            a(href="https://www.linkedin.com/in/othmen-mhiri" target="_blank") LinkedIn
           p.lead.mb-5
             | I’m a passionate IT student at ISET Sousse specializing in Networks and IT Services.
             br
@@ -107,11 +107,11 @@ html(lang="en")
             li
               span.fa-li
                 i.fas.fa-check
-              | Node.js, Express.js, REST APIs
+              | Node.js, Express.js ,REST APIs
             li
               span.fa-li
                 i.fas.fa-check
-              | PostgreSQL, MySQL
+              | PostgreSQL, MySQL, MongoDB
             li
               span.fa-li
                 i.fas.fa-check
@@ -131,26 +131,63 @@ html(lang="en")
             li
               span.fa-li
                 i.fas.fa-check
-              | Networking Fundamentals & Cybersecurity Basics
+              | ReactJS, TailWindCSS
 
       hr.m-0
 
       // Certifications & Projects Section
       section.resume-section#certifications
         .resume-section-content
-          h2.mb-5 Certifications & Projects
+          h2.mb-5 Certifications
           h4 Certifications I'm Working On:
           ul
             li CompTIA Network+ (WIP)
             li CompTIA Security+ (WIP)
             li AWS Certified Cloud Practitioner (WIP)
-
-          h4.mt-4 Projects (Work In Progress):
-          ul
-            li Cloud-Deployed Web App with IAM Policies (AWS)
-            li Personal Portfolio & Blog (This Website)
-            li Cybersecurity Lab Simulations (Home Setup)
-
+      hr.m-0
+      // Project Preview Section
+      section.resume-section#projects
+        .resume-section-content
+          h2.mb-5 Projects
+          .project-cards
+            .project-card
+              img.project-image(src="assets/img/icon.png" alt="Wishify Project Image")
+              h3.project-title Wishify
+              p.project-description Full-Stack Wishlist Web Application built with modern web technologies.
+              .project-hover-overlay
+                p
+                  | 🌟 Wishify : Turn Dreams Into Reality
+                  br
+                  | Wishify is a modern, user-friendly web app that helps users create, organize, and share digital wishlists. Whether it’s for birthdays, holidays, or personal goals, users can express their dreams and share them with loved ones effortlessly.
+                  br
+                  br
+                  | 🧩 Key Features:
+                  br
+                  | Wishlist Creation: Add wishes with images, details, and priority levels
+                  br
+                  | Privacy & Sharing: Private by default, share via link or social media
+                  br
+                  | Discovery & Connection: Explore public wishlists and connect with others
+                  br
+                  | User Profiles: Custom avatars, social features, and public wish showcases
+                  br
+                  br
+                  | ⚙️ Tech Stack:
+                  br
+                  | Built with the MERN stack (MongoDB, Express.js, React, Node.js)
+                  br
+                  | Frontend: React, responsive design, smooth animations, real-time interactions
+                  br
+                  | Backend: Secure API for auth, wish management, image uploads, and social features
+                  br
+                  br
+                  | 🎯 The Difference:
+                  br
+                  | Wishify focuses on human connection, privacy, and simplicity, making gift-giving more personal and joyful.
+                // Placeholder for video or slideshow
+                a.project-link(href="https://github.com/othmen27/wishify" target="_blank") View on GitHub
+                video.project-video(controls muted loop preload="metadata" style="max-width: 100%; border-radius: 0.25rem;")
+                  source(src="assets/img/WishfiyDemo.mp4" type="video/mp4")
     // Bootstrap core JS
     script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js")
     script(src="js/scripts.js")
