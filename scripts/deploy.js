@@ -10,6 +10,6 @@ sh.rm('-rf', docsPath);
 sh.mkdir('-p', docsPath);
 
 console.log('### INFO: Copying files from dist to docs');
-sh.cp('-R', distPath + '/.', docsPath);
+sh.cp('-R', upath.join(distPath, '*'), docsPath);
 
 console.log('### INFO: Deployment to docs folder completed.');
