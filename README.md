@@ -68,7 +68,7 @@ portfolio/
 
 2. Navigate to the project directory:
    ```bash
-   cd portfoliomhiri
+   cd othmenmhiri
    ```
 
 3. Install dependencies:
