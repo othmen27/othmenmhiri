@@ -11051,3 +11051,16 @@ section.resume-section .resume-section-content {
   border-radius: 0.25rem;
   margin-top: 1rem;
 }
+
+.project-images {
+  width: 100%;
+  margin-top: 1rem;
+}
+.project-images img {
+  width: 100%;
+  border-radius: 0.25rem;
+  margin-top: 0.5rem;
+}
+.project-images img:first-child {
+  margin-top: 1rem;
+}
