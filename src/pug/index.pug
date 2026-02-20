@@ -13,281 +13,393 @@ html(lang="en")
     link(href="css/styles.css" rel="stylesheet")
 
   body#page-top
-    // Navigation
-    nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
-      a.navbar-brand.js-scroll-trigger(href="#page-top")
-        span.d-block.d-lg-none Othmen Mhiri
-        span.d-none.d-lg-block
-          img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src="assets/img/profile.jpg" alt="Othmen Mhiri Profile Picture")
-      button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
-        span.navbar-toggler-icon
-      #navbarResponsive.collapse.navbar-collapse
-        ul.navbar-nav
-          li.nav-item
-            a.nav-link.js-scroll-trigger(href="#about") About
-          li.nav-item
-            a.nav-link.js-scroll-trigger(href="#experience") Experience
-          li.nav-item
-            a.nav-link.js-scroll-trigger(href="#education") Education
-          li.nav-item
-            a.nav-link.js-scroll-trigger(href="#skills") Skills
-          li.nav-item
-            a.nav-link.js-scroll-trigger(href="#certifications") Certifications & Projects
+  // Navigation
+  nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+    a.navbar-brand.js-scroll-trigger(href="#page-top")
+      span.d-block.d-lg-none Othmen Mhiri
+      span.d-none.d-lg-block
+        img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src="assets/img/profile.jpg" alt="Othmen Mhiri Profile Picture")
+    button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+    #navbarResponsive.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href="#about") About
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href="#experience") Experience
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href="#education") Education
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href="#skills") Skills
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href="#certifications") Certifications
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href="#projects") Projects
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href="#languages") Languages
 
-    // Page Content
-    .container-fluid.p-0
-      // About Section
-      section.resume-section#about
-        .resume-section-content
-          h1.mb-0 
-            | Othmen 
-            span.text-primary Mhiri
-          .subheading.mb-5
-            | Hammam Sousse, Tunisia · +216 56723120 · 
-            a(href="mailto:othmhiri@gmail.com") othmhiri@gmail.com
-            |  · 
-            a(href="https://www.linkedin.com/in/othmen-mhiri" target="_blank") LinkedIn
-          p.lead.mb-5
-            | I’m a passionate IT student at ISET Sousse specializing in Networks and IT Services.
-            br
-            | Currently focusing on Cloud Computing, DevOps, and Cybersecurity, while building hands-on projects and preparing for certifications.
-            br
-            | I believe in “suffer now, live happy later” and I’m putting in the work now to grow and build my career internationally.
-          .social-icons
-            a.social-icon(href="https://github.com/othmen27" target="_blank")
-              i.fab.fa-github
-            a.social-icon(href="https://www.linkedin.com/in/othmen-mhiri" target="_blank")
-              i.fab.fa-linkedin-in
+  // Page Content
+  .container-fluid.p-0
+    // About Section
+    section.resume-section#about
+      .resume-section-content
+        h1.mb-0
+          | Othmen
+          span.text-primary  Mhiri
+        .subheading.mb-5
+          | Hammam Sousse, Tunisia · +216 56723120 ·
+          a(href="mailto:othmhiri@gmail.com")  othmhiri@gmail.com
+          |  ·
+          a(href="https://www.linkedin.com/in/othmen-mhiri" target="_blank")  LinkedIn
+          |  ·
+          a(href="https://othmen27.github.io/othmenmhiri/" target="_blank")  Portfolio
+        p.lead.mb-5
+          | I’m an IT student at ISET Sousse specializing in Networks and IT Services.
+          br
+          | Currently focusing on Cloud Computing, DevOps, and Cybersecurity while building hands-on projects and strengthening real-world skills through internships.
+          br
+          | I believe in “suffer now, live happy later” — I’m putting in the work now to grow and build my career internationally.
+        .social-icons
+          a.social-icon(href="https://github.com/othmen27" target="_blank")
+            i.fab.fa-github
+          a.social-icon(href="https://www.linkedin.com/in/othmen-mhiri" target="_blank")
+            i.fab.fa-linkedin-in
 
-      hr.m-0
+    hr.m-0
 
-      // Experience Section
-      section.resume-section#experience
-        .resume-section-content
-          h2.mb-5 Experience
-          .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-            .flex-grow-1
-              h3.mb-0 Web Development Intern
-              .subheading.mb-3 Private Company (Ste Mainlab)
+    // Experience Section
+    section.resume-section#experience
+      .resume-section-content
+        h2.mb-5 Experience
+
+        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+          .flex-grow-1
+            h3.mb-0 Full Stack Web Developer Intern
+            .subheading.mb-3 Ostrix
+            p
+              | Designed and developed a user-friendly web app that allows users to create and manage users, products, and clients.
+              br
+              | Built using MERN Stack with responsive UI and real-time interactions.
+              br
+              | Implemented user authentication and image uploads.
+          .flex-shrink-0
+            span.text-primary January 2026 – Present
+
+        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+          .flex-grow-1
+            h3.mb-0 Web Development Intern
+            .subheading.mb-3 Private Company (Ste MainLab)
+            p
+              | Built RESTful APIs using Node.js, Express.js, and PostgreSQL.
+              br
+              | Collaborated with Git and GitHub for version control.
+              br
+              | Handled frontend development using HTML, CSS, and JavaScript.
+          .flex-shrink-0
+            span.text-primary January 2025 – February 2025
+
+    hr.m-0
+
+    // Education Section
+    section.resume-section#education
+      .resume-section-content
+        h2.mb-5 Education
+
+        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+          .flex-grow-1
+            h3.mb-0 ISET Sousse
+            .subheading.mb-3 Networks & IT Services (RSI)
+            p Applied Bachelor's Degree in Network and IT Services
+          .flex-shrink-0
+            span.text-primary 2024 – Present
+
+        .d-flex.flex-column.flex-md-row.justify-content-between
+          .flex-grow-1
+            h3.mb-0 Lycée Hammam Sousse
+            .subheading.mb-3 Baccalaureate in Computer Science
+            p Baccalaureate in Computer Science
+          .flex-shrink-0
+            span.text-primary 2021 – 2024
+
+    hr.m-0
+
+    // Skills Section
+    section.resume-section#skills
+      .resume-section-content
+        h2.mb-5 Skills
+
+        h4.mb-3 Cybersecurity
+        ul.fa-ul.mb-4
+          li
+            span.fa-li
+              i.fas.fa-check
+            | SIEM basics, log analysis, security monitoring
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Incident response, phishing investigation
+          li
+            span.fa-li
+              i.fas.fa-check
+            | IDS/IPS, security monitoring
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Privilege escalation (lab environment)
+
+        h4.mb-3 Development
+        ul.fa-ul.mb-4
+          li
+            span.fa-li
+              i.fas.fa-check
+            | REST APIs
+          li
+            span.fa-li
+              i.fas.fa-check
+            | MERN Stack (MongoDB, Express, React, Node.js)
+
+        h4.mb-3 Systems & Networking
+        ul.fa-ul.mb-4
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Linux CLI
+          li
+            span.fa-li
+              i.fas.fa-check
+            | TCP/IP fundamentals
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Wireshark traffic analysis
+
+        h4.mb-3 Tools
+        ul.fa-ul.mb-0
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Git / GitHub
+
+    hr.m-0
+
+    // Certifications Section
+    section.resume-section#certifications
+      .resume-section-content
+        h2.mb-5 Certifications & Practical Experience
+
+        h4.mb-3 TryHackMe Certifications
+        ul.mb-4
+          li TryHackMe — Cyber Security 101
+          li TryHackMe — SOC Level 1 (Legacy & Updated)
+          li TryHackMe — Jr Penetration Tester
+          li TryHackMe — Offensive Pentesting
+
+        h4.mb-3 Cybersecurity Labs & Detection Practice
+        p
+          | Completed 270+ hands-on cybersecurity labs, ranked in the Top 1% with a 190+ day learning streak.
+          br
+          | Practiced SIEM analysis, incident response, phishing investigation, exploitation, privilege escalation, and detection engineering in controlled lab environments.
+          br
+          | Documented red- and blue-team findings in structured writeups connecting attacker behavior to logs, alerts, and remediation strategies.
+
+        p.mb-4
+          strong Writeups:
+          |
+          a(href="https://github.com/othmen27/offense-and-detection-labs" target="_blank") github.com/othmen27
+
+        h5.mb-3 TryHackMe Profile:
+        .thm-badge(style="margin-top: 1rem; width:300px; height:200px; overflow:hidden;")
+          iframe(
+            src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=5393889"
+            style="border:none; width:100%; height:100%; overflow:hidden;"
+            scrolling="no"
+          )
+
+    hr.m-0
+
+    // Projects Section (your original content, just correctly placed)
+    section.resume-section#projects
+      .resume-section-content
+        h2.mb-5 Projects
+        .project-cards
+          .project-card
+            img.project-image(src="assets/img/icon.png" alt="Wishify Project Image")
+            h3.project-title Wishify
+            p.project-description Full-Stack Wishlist Web Application built with modern web technologies.
+            .project-hover-overlay
               p
-                | I worked on building RESTful APIs using Node.js, Express.js, and PostgreSQL.
+                |  Wishify : Turn Dreams Into Reality
                 br
-                | I collaborated with Git and GitHub for version control, and handled frontend development using HTML, CSS, and JavaScript.
-            .flex-shrink-0
-              span.text-primary January 2024
-
-      hr.m-0
-
-      // Education Section
-      section.resume-section#education
-        .resume-section-content
-          h2.mb-5 Education
-          .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-            .flex-grow-1
-              h3.mb-0 ISET Sousse
-              .subheading.mb-3 Networks & IT Services (RSI)
-              p Currently entering 2nd year
-            .flex-shrink-0
-              span.text-primary 2024 - Present
-          .d-flex.flex-column.flex-md-row.justify-content-between
-            .flex-grow-1
-              h3.mb-0 Lycée Hammam Sousse
-              .subheading.mb-3 Baccalaureate in Computer Science
-              p Graduated in 2024
-            .flex-shrink-0
-              span.text-primary 2021 - 2024
-
-      hr.m-0
-
-      // Skills Section
-      section.resume-section#skills
-        .resume-section-content
-          h2.mb-5 Skills
-          ul.fa-ul.mb-0
-            li
-              span.fa-li
-                i.fas.fa-check
-              | The entire MERN Stack
-            li
-              span.fa-li
-                i.fas.fa-check
-              | Full Stack Web development
-            li
-              span.fa-li
-                i.fas.fa-check
-              | Git & GitHub, Version Control
-            li
-              span.fa-li
-                i.fas.fa-check
-              | Object-Oriented Programming
-            li
-              span.fa-li
-                i.fas.fa-check
-              | SIEM & DFIR
-            li
-              span.fa-li
-                i.fas.fa-check
-              | Log & Network Traffic Analysis
-            li
-              span.fa-li
-                i.fas.fa-check
-              | SOC Operations
-            li
-              span.fa-li
-                i.fas.fa-check 
-              | Firewall & IDS Monitoring
-            li
-              span.fa-li
-                i.fas.fa-check 
-              | Malware & URL Investigation
-            li
-              span.fa-li
-                i.fas.fa-check
-              | Soft Skills like Analytical Thinking, Documentation & Reporting and Continuous Learning
-
-      hr.m-0
-
-      // Certifications & Projects Section
-      section.resume-section#certifications
-        .resume-section-content
-          h2.mb-5 Certifications
-          ul
-            li Cyber Security 101 Certification from TryHackMe.
-          br
-          br
-          h5 TryHackMe Profile:
-          .thm-badge(style="margin-top: 1rem; width:300px; height:200px; overflow:hidden;")
-            iframe(
-              src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=5393889"
-              style="border:none; width:100%; height:100%px; overflow:hidden;"
-              scrolling="no"
-            )
-      hr.m-0
-      // Project Preview Section
-      section.resume-section#projects
-        .resume-section-content
-          h2.mb-5 Projects
-          .project-cards
-            .project-card
-              img.project-image(src="assets/img/icon.png" alt="Wishify Project Image")
-              h3.project-title Wishify
-              p.project-description Full-Stack Wishlist Web Application built with modern web technologies.
-              .project-hover-overlay
-                p
-                  | 🌟 Wishify : Turn Dreams Into Reality
-                  br
-                  | Wishify is a modern, user-friendly web app that helps users create, organize, and share digital wishlists. Whether it’s for birthdays, holidays, or personal goals, users can express their dreams and share them with loved ones effortlessly.
-                  br
-                  br
-                  | 🧩 Key Features:
-                  br
-                  | Wishlist Creation: Add wishes with images, details, and priority levels
-                  br
-                  | Privacy & Sharing: Private by default, share via link or social media
-                  br
-                  | Discovery & Connection: Explore public wishlists and connect with others
-                  br
-                  | User Profiles: Custom avatars, social features, and public wish showcases
-                  br
-                  br
-                  | ⚙️ Tech Stack:
-                  br
-                  | Built with the MERN stack (MongoDB, Express.js, React, Node.js)
-                  br
-                  | Frontend: React, responsive design, smooth animations, real-time interactions
-                  br
-                  | Backend: Secure API for auth, wish management, image uploads, and social features
-                  br
-                  br
-                  | 🎯 The Difference:
-                  br
-                  | Wishify focuses on human connection, privacy, and simplicity, making gift-giving more personal and joyful.
-                a.project-link(href="https://github.com/othmen27/wishify" target="_blank") View on GitHub
-                video.project-video(controls muted loop preload="metadata" style="max-width: 100%; border-radius: 0.25rem;")
-                  source(src="assets/img/WishfiyDemo.mp4" type="video/mp4")
+                | Wishify is a modern, user-friendly web app that helps users create, organize, and share digital wishlists. Whether it’s for birthdays, holidays, or personal goals, users can express their dreams and share them with loved ones effortlessly.
                 br
+                br
+                |  Key Features:
+                br
+                | Wishlist Creation: Add wishes with images, details, and priority levels
+                br
+                | Privacy & Sharing: Private by default, share via link or social media
+                br
+                | Discovery & Connection: Explore public wishlists and connect with others
+                br
+                | User Profiles: Custom avatars, social features, and public wish showcases
+                br
+                br
+                |  Tech Stack:
+                br
+                | Built with the MERN stack (MongoDB, Express.js, React, Node.js)
+                br
+                | Frontend: React, responsive design, smooth animations, real-time interactions
+                br
+                | Backend: Secure API for auth, wish management, image uploads, and social features
+                br
+                br
+                |  The Difference:
+                br
+                | Wishify focuses on human connection, privacy, and simplicity, making gift-giving more personal and joyful.
+              a.project-link(href="https://github.com/othmen27/wishify" target="_blank") View on GitHub
+              video.project-video(controls muted loop preload="metadata" style="max-width: 100%; border-radius: 0.25rem;")
+                source(src="assets/img/WishfiyDemo.mp4" type="video/mp4")
+              br
+              p
+                | Added Real Time that will showcase later on
+                br
+                | Working on deploying the website On AWS
+
+          .project-card
+            img.project-image(src="assets/img/c++.png" alt="Compiler Project Image")
+            h3.project-title Small Private Compiler
+            p.project-description C++ Compiler that compiles Tunisian pseudo code into C++ Code.
+            .project-hover-overlay
+              p
+                | 🇹🇳 Tunisian Algorithm to C++ Translator
+                br
+                | A compiler-style C++ program that translates Tunisian pseudocode into clean, compilable C++ source code.
+                br
+                |  Technologies Used:
+                br
+                | - C++ for parsing and code generation
+                br
+                | - File I/O for reading .tn pseudocode and writing .cpp output
+                br
+                br
+                |  Key Features:
+                br
+                | - Supports variables, control flow, functions, procedures, and I/O
+                br
+                | - Generates a complete executable C++ file automatically
+                br
+                br
+                |  Input/Output:
+                br
+                | - Input: algo.tn
+                br
+                | - Output: translated.cpp
+              a.project-link(href="https://github.com/othmen27/Pseudocode-Compiler" target="_blank") View on GitHub
+              .project-images
                 p
-                  | Added Real Time that will showcase later on
-                  br
-                  | Working on deploying the website On AWS
-            .project-card
-              img.project-image(src="assets/img/c++.png" alt="Wishify Project Image")
-              h3.project-title Small Private Compiler
-              p.project-description C++ Compiler that compiles Tunisianpseudo code into C++ Code.
+                  strong Raw Pseudocode:
+                img(src="assets/img/algo.png" alt="Algo Image" style="width: 100%; margin-top: 1rem; border-radius: 0.25rem;")
+                p
+                  strong Translation:
+                img(src="assets/img/translated.png" alt="Translated Image" style="width: 100%; margin-top: 1rem; border-radius: 0.25rem;")
+
+          .project-card
+            img.project-image(src="assets/img/siem.png" alt="SIEM Project Image")
+            h3.project-title Phishing Incident Response (SIEM Simulation) TryHackMe
+            p.project-description
+              | Simulated detection and analysis of phishing alerts using a SIEM platform. Classified alerts as true or false positives, analyzed headers/URLs/IOCs, and proposed remediation steps.
+            .project-hover-overlay
+              p
+                |  Key Skills Demonstrated:
+                br
+                | SIEM Monitoring & Analysis
+                br
+                | Incident Response & Triage
+                br
+                | Threat Intelligence & Phishing Analysis
+                br
+                | Log & Network Traffic Analysis
+                br
+                | False Positive / True Positive Classification
+                br
+                | SOC Operations
+              a.project-link(href="https://github.com/othmen27/siem-phishing-incident-response" target="_blank") View on GitHub
+              .project-images
+                p
+                  strong Firewall alert:
+                img(src="assets/img/firewallalert.png" alt="Firewall Alert" style="width: 100%; margin-top: 1rem; border-radius: 0.25rem;")
+                p
+                  strong Phishing alert:
+                img(src="assets/img/Phishing1alert.png" alt="Phishing Alert" style="width: 100%; margin-top: 1rem; border-radius: 0.25rem;")
+          
+          .project-card
+              img.project-image(src="assets/img/tryhackme.png" alt="Offense & Detection Labs")
+              h3.project-title Offense & Detection Labs
+              p.project-description
+                | Structured red team + blue team writeups linking attacker behavior to logs, detection opportunities, and mitigation in realistic lab environments.
               .project-hover-overlay
                 p
-                  | 🇹🇳 Tunisian Algorithm to C++ Translator
+                  |  Offense & Detection Labs (Purple Team Writeups)
                   br
-                  | A compiler-style C++ program that translates Tunisian pseudocode (used in high school and university) into clean, compilable C++ source code.
+                  | A structured repository of cybersecurity lab writeups that connect offensive actions to defensive visibility.
                   br
-                  | 🔧 Technologies Used:
+                  | Instead of step-by-step walkthroughs, each writeup explains what happened, why it matters, what logs/alerts it produces, and how to detect and mitigate it.
                   br
-                  |   - C++ for parsing and code generation
+                  |  What This Project Demonstrates:
                   br
-                  |   - Standard Library: iostream, string, cmath, etc.
+                  | • Attacker mindset: exploitation, privilege escalation, credential abuse, misconfigurations
                   br
-                  |   - File I/O for reading .tn pseudocode and writing .cpp output
+                  | • Defender mindset: SIEM-style analysis, incident response thinking, detection opportunities, hardening
                   br
-                  br
-                  | 💡 Key Features:
-                  br
-                  |   - Translates Tunisian keywords like entier, si, tantque, ecrire, retourne, etc.
-                  br
-                  |   - Supports:
-                  br
-                  |     * Variable declarations (entier, chaine, etc.)
-                  br
-                  |     * Control flow: si...alors, pour...de...a...faire, tantque, repeter
-                  br
-                  |     * Functions and procedures
-                  br
-                  |     * I/O: ecrire() and lire()
-                  br
-                  |   - Automatically generates a complete and executable C++ file
+                  | • Clear documentation: professional writeup structure and evidence-based reasoning
                   br
                   br
-                  |  📁 Input/Output Example:
+                  |  Writeup Structure (Consistent Format):
                   br
-                  |   - Input: algo.tn (Tunisian pseudocode)
+                  | Context → What Happened → Detection (logs/alerts/IOCs) → Response → Prevention → Key Takeaways
                   br
-                  |   - Output: translated.cpp (Valid, clean C++ code)
-                a.project-link(href="https://github.com/othmen27/Pseudocode-Compiler" target="_blank") View on GitHub
-                .project-images
-                  p 
-                    strong Raw Pseudocode:
-                  img(src="assets/img/algo.png" alt="Algo Image" style="width: 100%; margin-top: 1rem; border-radius: 0.25rem;")
-                  p 
-                    strong Translation:
-                  img(src="assets/img/translated.png" alt="translated Image" style="width: 100%; margin-top: 1rem; border-radius: 0.25rem;")
-            .project-card
-              img.project-image(src="assets/img/siem.png" alt="Wishify Project Image")
-              h3.project-title Phishing Incident Response (SIEM Simulation) TryHackMe Project
-              p.project-description 
-                | Simulated detection and analysis of phishing alerts using a SIEM platform. 
-                | Classified alerts as true or false positives, analyzed email headers, URLs, and network indicators, and proposed remediation strategies to improve incident response workflows.
-              .project-hover-overlay
-                p
-                  | 🛡️ Key Skills Demonstrated:
                   br
-                  | SIEM Monitoring & Analysis
+                  |  Repository Layout:
                   br
-                  | Incident Response & Triage
+                  | Red Team: offensive labs and techniques (multi-step scenarios)
                   br
-                  | Threat Intelligence & Phishing Analysis
+                  |  Blue Team: defensive analysis, alerts, and detection logic derived from SOC-oriented labs
                   br
-                  | Log & Network Traffic Analysis
                   br
-                  | False Positive / True Positive Classification
+                  |  Why It’s Different:
                   br
-                  | SOC Operations
-                a.project-link(href="https://github.com/othmen27/siem-phishing-incident-response" target="_blank") View on GitHub
-                .project-images
-                  p 
-                    strong Firewall alert:
-                  img(src="assets/img/firewallalert.png" alt="Algo Image" style="width: 100%; margin-top: 1rem; border-radius: 0.25rem;")
-                  p 
-                    strong Phishing alert:
-                  img(src="assets/img/Phishing1alert.png" alt="translated Image" style="width: 100%; margin-top: 1rem; border-radius: 0.25rem;")
-    // Bootstrap core JS
-    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js")
-    script(src="js/scripts.js")
+                  | This repo focuses on connecting actions to observable signals — bridging the gap between “how an attack works” and “how defenders catch it.”
+                  br
+                  br
+                  |  Ethics & Scope:
+                  br
+                  | All content is based on controlled lab environments only. No real-world targets or sensitive data.
+                  a.project-link(href="https://github.com/othmen27/offense-and-detection-labs" target="_blank") View on GitHub
+
+    hr.m-0
+
+    // Languages Section
+    section.resume-section#languages
+      .resume-section-content
+        h2.mb-5 Languages
+        ul.fa-ul.mb-0
+          li
+            span.fa-li
+              i.fas.fa-check
+            | English (Fluent)
+          li
+            span.fa-li
+              i.fas.fa-check
+            | French (Intermediate)
+          li
+            span.fa-li
+              i.fas.fa-check
+            | German (Basics)
+          li
+            span.fa-li
+              i.fas.fa-check
+            | Arabic (Native)
+
+  // Bootstrap core JS
+  script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js")
+  script(src="js/scripts.js")
