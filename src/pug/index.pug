@@ -375,7 +375,64 @@ html(lang="en")
                   br
                   | All content is based on controlled lab environments only. No real-world targets or sensitive data.
                   a.project-link(href="https://github.com/othmen27/offense-and-detection-labs" target="_blank") View on GitHub
-
+          .project-card
+            img.project-image(src="assets/img/Battlemetrics.png" alt="Battlemetrics Project Image")
+            h3.project-title Discord Anti-Cheat Monitor
+            p.project-description
+              | p.project-description Real-time Discord bot that analyzes player behavior using BattleMetrics API and flags suspicious activity based on detection logic (K/D, playtime, reports, bans).
+            .project-hover-overlay
+                p
+                  |  Discord Anti-Cheat Monitoring System
+                  br
+                  | A real-time monitoring bot that streams players from multiple servers and analyzes their behavior to detect suspicious activity.
+                  br
+                  br
+                  |  What It Does:
+                  br
+                  | • Streams live players across servers using BattleMetrics API
+                  br
+                  | • Analyzes player activity (K/D, kills, deaths, reports)
+                  br
+                  | • Calculates a “hacker probability” score
+                  br
+                  | • Flags suspicious players automatically
+                  br
+                  | • Sends structured alerts to Discord with embeds
+                  br
+                  br
+                  |  Detection Logic:
+                  br
+                  | Combines multiple indicators:
+                  br
+                  | • High K/D vs low playtime
+                  br
+                  | • Reports and ban history
+                  br
+                  | • Recent suspicious activity patterns
+                  br
+                  br
+                  |  Tech Stack:
+                  br
+                  | • Node.js + discord.js
+                  br
+                  | • BattleMetrics API integration
+                  br
+                  | • Modular backend architecture
+                  br
+                  br
+                  |  Features:
+                  br
+                  | • Role ping for high-risk players
+                  br
+                  | • Multi-server monitoring
+                  br
+                  | • Rate-limit safe streaming system
+                  br
+                  br
+                  | 💡 Why It’s Interesting:
+                  br
+                  | Demonstrates detection engineering thinking by connecting raw activity data to actionable security insights.
+                a.project-link(href="https://github.com/DevWPO/RustBusterBot" target="_blank") View on GitHub
     hr.m-0
 
     // Languages Section
